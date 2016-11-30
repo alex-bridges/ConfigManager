@@ -78,7 +78,7 @@ local function readConfig()
     config[count] = l
     count = count + 1
   end
-    return config
+    currentConfig = config
 end
 
 local function writeConfig(config)
