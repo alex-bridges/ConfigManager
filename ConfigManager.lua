@@ -1,7 +1,6 @@
 function loadWidth()
   if love.filesystem.exists("width.dat") then
-    local size = love.filesystem.getSize("width.dat")
-    local data = love.filesystem.read("width.dat", size)
+    local data = love.filesystem.read("width.dat")
     return tonumber(data)
   end
 end
@@ -12,8 +11,7 @@ end
 
 function loadHeight()
   if love.filesystem.exists("height.dat") then
-    local size = love.filesystem.getSize("height.dat")
-    local data = love.filesystem.read("height.dat", size)
+    local data = love.filesystem.read("height.dat")
     return tonumber(data)
   end
 end
@@ -25,8 +23,7 @@ end
 function loadBorderless()
   local file = "borderless.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     if data == "true" then
       return true
     else
@@ -42,8 +39,7 @@ end
 function loadResizable()
   local file = "resizable.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     if data == "true" then
       return true
     else
@@ -58,8 +54,7 @@ end
 
 function loadMinWidth()
   if love.filesystem.exists("minwidth.dat") then
-    local size = love.filesystem.getSize("minwidth.dat")
-    local data = love.filesystem.read("minwidth.dat", size)
+    local data = love.filesystem.read("minwidth.dat")
     return tonumber(data)
   end
 end
@@ -70,8 +65,7 @@ end
 
 function loadMinHeight()
   if love.filesystem.exists("minheight.dat") then
-    local size = love.filesystem.getSize("minheight.dat")
-    local data = love.filesystem.read("minheight.dat", size)
+    local data = love.filesystem.read("minheight.dat")
     return tonumber(data)
   end
 end
@@ -83,8 +77,7 @@ end
 function loadFullscreen()
   local file = "fullscreen.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     if data == "true" then
       return true
     else
@@ -100,8 +93,7 @@ end
 function loadFullscreenType()
   local file = "fullscreenType.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     return data
   end
 end
@@ -113,8 +105,7 @@ end
 function loadVsync()
   local file = "vsync.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     if data == "true" then
       return true
     else
@@ -130,8 +121,7 @@ end
 function loadMSAA()
   local file = "msaa.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     return tonumber(data)
   end
 end
@@ -143,8 +133,7 @@ end
 function loadDisplay()
   local file = "display.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     return tonumber(data)
   end
 end
@@ -156,8 +145,7 @@ end
 function loadHighDPI()
   local file = "highdpi.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     if data == "true" then
       return true
     else
@@ -173,8 +161,7 @@ end
 function loadWindowPosWidth()
   local file = "windowwidth.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     return tonumber(data)
   end
 end
@@ -186,8 +173,7 @@ end
 function loadWindowPosHeight()
   local file = "windowheight.dat"
   if love.filesystem.exists(file) then
-    local size = love.filesystem.getSize(file)
-    local data = love.filesystem.read(file, size)
+    local data = love.filesystem.read(file)
     return tonumber(data)
   end
 end
