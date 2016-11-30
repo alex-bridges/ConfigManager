@@ -3,8 +3,6 @@ function loadWidth()
     local size = love.filesystem.getSize("width.dat")
     local data = love.filesystem.read("width.dat", size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -17,8 +15,6 @@ function loadHeight()
     local size = love.filesystem.getSize("height.dat")
     local data = love.filesystem.read("height.dat", size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -36,8 +32,6 @@ function loadBorderless()
     else
       return false
     end
-  else
-    return nil
   end
 end
 
@@ -55,8 +49,6 @@ function loadResizable()
     else
       return false
     end
-  else
-    return nil
   end
 end
 
@@ -69,8 +61,6 @@ function loadMinWidth()
     local size = love.filesystem.getSize("minwidth.dat")
     local data = love.filesystem.read("minwidth.dat", size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -83,8 +73,6 @@ function loadMinHeight()
     local size = love.filesystem.getSize("minheight.dat")
     local data = love.filesystem.read("minheight.dat", size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -102,8 +90,6 @@ function loadFullscreen()
     else
       return false
     end
-  else
-    return nil
   end
 end
 
@@ -117,8 +103,6 @@ function loadFullscreenType()
     local size = love.filesystem.getSize(file)
     local data = love.filesystem.read(file, size)
     return data
-  else
-    return nil
   end
 end
 
@@ -136,8 +120,6 @@ function loadVsync()
     else
       return false
     end
-  else
-    return nil
   end
 end
 
@@ -151,8 +133,6 @@ function loadMSAA()
     local size = love.filesystem.getSize(file)
     local data = love.filesystem.read(file, size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -166,8 +146,6 @@ function loadDisplay()
     local size = love.filesystem.getSize(file)
     local data = love.filesystem.read(file, size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -185,8 +163,6 @@ function loadHighDPI()
     else
       return false
     end
-  else
-    return nil
   end
 end
 
@@ -200,8 +176,6 @@ function loadWindowPosWidth()
     local size = love.filesystem.getSize(file)
     local data = love.filesystem.read(file, size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
@@ -215,8 +189,6 @@ function loadWindowPosHeight()
     local size = love.filesystem.getSize(file)
     local data = love.filesystem.read(file, size)
     return tonumber(data)
-  else
-    return nil
   end
 end
 
